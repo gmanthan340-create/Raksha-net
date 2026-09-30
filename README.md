@@ -24,40 +24,6 @@ This can make it difficult for:
 
 **Raksha-Net** uses a decentralized LoRa-based mesh network to provide communication between field devices without depending on cellular networks or the internet.
 
-### System Architecture
-
-
-📱 User Phone
-      │
-      │ Wi-Fi / Bluetooth
-      ▼
-┌─────────────────┐
-│  Raksha-Net Node│
-│     ESP32       │
-│  + GNSS + LoRa  │
-└────────┬────────┘
-         │
-         │ LoRa Mesh
-         ▼
-   ┌─────────────┐
-   │ Mesh Nodes  │
-   │  Node → Node│
-   └──────┬──────┘
-          │
-          ▼
-┌──────────────────┐
-│ Gateway / Rescue │
-│   Communication │
-└────────┬─────────┘
-         │
-         ▼
-   Rescue Dashboard
-         │
-         ▼
-      AI Layer
-
-
-
 
 ##  Communication
 
@@ -104,26 +70,6 @@ The PCB was designed using KiCad.
 PCB 3D Model
 
 The PCB integrates the controller, communication interfaces, emergency interface and power circuitry into a compact prototype.
-
-
-
-# Repository Structure
-Raksha-Net/
-│
-├── Hardware/
-│   ├── KiCad/
-│   │   ├── Emergency_LoRa_Node.kicad_pro
-│   │   ├── Emergency_LoRa_Node.kicad_sch
-│   │   └── Emergency_LoRa_Node.kicad_pcb
-│   │
-│   └── 3D/
-│       └── PCB_3D_Render.png
-│
-├── Documentation/
-│
-├── Media/
-│
-└── README.md
 
 
 ## Smart India Hackathon 2026
